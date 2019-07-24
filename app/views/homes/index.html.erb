@@ -1,0 +1,12 @@
+<% if flash[:notice] %>
+ <p><%= flash[:notice] %></p>
+<%end%> 
+
+<h1>Welcome to Bookers !!!!</h1>
+<p>In Bookers,</p>
+<p>you canshare and exchange your opinions , inpressions , and emotionsabout varioius books!</p>
+
+<ul>
+	<li><%= link_to "Log in",new_user_session_path, class:'btn btn-info col-xs-10 col-xs-offset-1' %></li>
+	<li><%= link_to "sign up",new_user_registration_path, class: 'btn btn-success col-xs-10 col-xs-offset-1' %></li>
+</ul>
